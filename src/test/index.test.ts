@@ -9,9 +9,7 @@ describe("check jest", () => {
   });
 
   it("should be able to check svelte files", () => {
-    const { getByTestId } = render(App, {
-      props: {},
-    });
+    const { getByTestId } = render(App, {});
 
     expect(getByTestId("app")).toBeInTheDocument();
   });
